@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url('background.png');
+    background-image: url('backgrounds/background.png');
     background-repeat: repeat;
     display: flex;
     justify-content: space-around;
@@ -37,7 +37,7 @@ header h1 {
 .main {
     display: grid;
     grid-template-columns: 8% auto 8%;
-    grid-template-rows: 140px auto 100px auto
+    grid-template-rows: 140px auto 140px auto 140px auto;
 }
 
 .card {
@@ -99,10 +99,112 @@ header h1 {
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
+    text-decoration: underline;
     
     color: #000000;
 }
 
 .first {
-    grid-row: 2 / 3
+    grid-row: 2 / 3;
+}
+
+.second {
+    grid-row: 4 / 5;
+}
+
+footer {
+    background-image: url('backgrounds/footer background.png');
+    display: grid;
+    /*align-items: center;*/
+    grid-template-columns: repeat(13, 7.7%);
+    grid-template-rows: 200px auto 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+footer h1 {
+    align-items: center;
+    text-align: start;
+    margin-top: 20px;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    
+    color: #FFFFFF;
+}
+
+.credits {
+    align-self: start;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.credits p {
+    margin: 0;
+}
+
+.patents {
+    align-self: start;
+    text-align: start;
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.patents p {
+    margin: 0;
+}
+
+.responsibility {
+    align-self: start;
+    margin: 0px;
+    grid-column: 8 / 13;
+    grid-row: 2 / 3;
+    
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    
+    color: #FFFFFF;
 }
