@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-image: url('background.png');
+    background-repeat: repeat;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    max-height: 140px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF
+}
+
+.logo {
+    margin: 20px;
+}
+
+.cart {
+    margin: 20px;
+}
+
+header h1 {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    max-height: 140px;
+    color: #000000;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 8% auto 8%;
+    grid-template-rows: 140px auto 100px auto
+}
+
+.card {
+    max-width: 1640px;
+    min-width: 100%;
+    grid-column: 2 / 3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(11, 9%);
+    grid-template-rows: 60px auto 60px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.card img {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.article {
+    grid-column: 7 / 11;
+    grid-row: 2 / 3;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.article h2 {
+    text-align: center;
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.article p {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    
+    color: #000000;
+}
+
+.article a p{
+    text-align: center;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    
+    color: #000000;
+}
+
+.first {
+    grid-row: 2 / 3
+}
