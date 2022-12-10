@@ -31,13 +31,16 @@
     height: 140px;
     min-width: 100%;
     max-width: 100%;
+}
+
+.page button a {
     font-family: 'Press Start 2P';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 32px;
     text-align: center;
-
+    text-decoration: none;
     color: #FFFFFF;
 }
 
