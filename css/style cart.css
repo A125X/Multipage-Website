@@ -167,12 +167,20 @@
   #cart-items {
     background-image: url('../pictures/backgrounds/footer background.png');
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   .c-item {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 6% 40% 6% 40% 6%;
+    grid-template-rows: 80px auto 60px auto 80px;
   }
-  .c-name, .c-total {
+  .c-name {
+    grid-area: 2 / 2 / 3 / 5;
     font-family: 'Press Start 2P';
     font-style: normal;
     font-weight: 400;
@@ -181,17 +189,45 @@
     text-align: center;
     text-decoration: none;
   }
-  .c-name, .c-total, button.c-empty, button.c-checkout { 
+  .c-total, button.c-empty, button.c-checkout { 
     max-width: 100%;
     width: 90%;
+    align-self: center;
   }
-  .c-total, button.c-empty, button.c-checkout { margin-top: 10px; }
-  .c-del {
-    
+  .c-total, button.c-empty, button.c-checkout { margin-top: 60px; }
+  .c-qty {
+    grid-area: 4 / 2 / 5 / 3;
+    height: 140px;
+    width: 75%;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
   }
-  .c-qty { width: 75%; }
   .c-empty, .c-checkout {
     background-color: #fff;
+  }
+
+  .c-del {
+    grid-area: 4 / 4 / 5 / 5;
+    height: 140px;
+    width: 140px;
+  }
+
+  .c-cart_empty, .c-total {
+    height: 140px;
+    width: 75%;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
   }
   
   @media screen and (max-width: 640px) {

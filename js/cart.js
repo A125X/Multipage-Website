@@ -65,6 +65,7 @@ var cart = {
       // (D2) CART IS EMPTY
       if (empty) {
         item = document.createElement("div");
+         item.className = "c-cart_empty";
         item.innerHTML = "Cart is empty";
         cart.hItems.appendChild(item);
       }
@@ -92,7 +93,7 @@ var cart = {
         item = document.createElement("div");
         item.className = "c-total";
         item.id = "c-total";
-        item.innerHTML ="TOTAL: $" + total;
+        item.innerHTML ="Total: $" + total;
         cart.hItems.appendChild(item);
   
         // (D3-4) EMPTY & CHECKOUT
