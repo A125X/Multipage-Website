@@ -23,5 +23,11 @@ var products = {
       desc : "Business-oriented personal computer.",
       img : "apple 3.png",
       price : 4490
+    },
+    127: {
+      name : "Lisa 2",
+      desc : "Second generation of gorgeus Apple Lisa.",
+      img : "lisa 2.png",
+      price : 4490
     }
   };

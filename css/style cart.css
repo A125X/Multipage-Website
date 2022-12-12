@@ -216,7 +216,7 @@
     height: 140px;
     width: 140px;
   }
-
+  .c-cart_empty { margin-top: 80px;}
   .c-cart_empty, .c-total {
     height: 140px;
     width: 75%;
